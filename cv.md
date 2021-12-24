@@ -75,7 +75,7 @@ function noSpace(str){
 
 Телефон: [+375293904874](+375293904874)
 
-e-mail: [slimgos22@gmail.com](slimgos22@gmail.com)
+e-mail: [maxim.khotsin@gmail.com](maxim.khotsin@gmail.com)
 
 Telegram: [@Slimmzzz](https://t.me/slimmzzz)
 
