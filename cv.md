@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # CV Max Khotsin
+=======
+# CV Max Khotsin(Максим Хотин)
+>>>>>>> gh-pages
 
 ## О себе
 
@@ -75,7 +79,11 @@ function noSpace(str){
 
 Телефон: [+375293904874](+375293904874)
 
+<<<<<<< HEAD
 e-mail: [slimgos22@gmail.com](slimgos22@gmail.com)
+=======
+e-mail: [maxim.khotsin@gmail.com](maxim.khotsin@gmail.com)
+>>>>>>> gh-pages
 
 Telegram: [@Slimmzzz](https://t.me/slimmzzz)
 
