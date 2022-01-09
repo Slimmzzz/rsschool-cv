@@ -57,6 +57,7 @@ html {
 @media (max-width: 640px) {
   .header {
     padding: 10px 0;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
   }
@@ -184,6 +185,7 @@ html {
 .aside {
   padding-top: 1rem;
   width: 370px;
+  position: -webkit-sticky;
   position: sticky;
   top: 1rem;
   align-self: flex-start;
