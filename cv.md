@@ -1,4 +1,4 @@
-# CV Max Khotsin(Максим Хотин)
+# CV Maxim Khotsin(Максим Хотин)
 
 ## О себе
 
