@@ -2,7 +2,7 @@
 
 ## О себе(Summary)
 
-![Фото автора CV](https://slimmzzz.github.io/rsschool-cv/assets/img/About_photo.jpg)
+![Фото автора CV](https://raw.githubusercontent.com/Slimmzzz/rsschool-cv/gh-pages/About_photo.jpg)
 
 Мне 29 лет, работаю в Посольстве Венгрии, в консульском отделе. Долгое время работал в сферах, которые пересекаются с визовой и информационной поддержкой, пробовал себя в разных направлениях, искал и изучал много различной информации.
 
