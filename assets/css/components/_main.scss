@@ -1,6 +1,10 @@
 .main {
     width: 870px;
     padding: 1rem 0 3rem;
+
+    @media (min-width: 641px) {
+        padding-right: 1rem;
+    }
     
     @media (max-width: $breakpoint_mobile) {
         width: 100%;
