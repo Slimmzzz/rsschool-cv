@@ -57,6 +57,7 @@ html {
 @media (max-width: 640px) {
   .header {
     padding: 10px 0;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
   }
@@ -125,6 +126,24 @@ html {
   text-align: right;
 }
 
+.langs {
+  font-size: 20px;
+}
+.langs a {
+  text-decoration: none;
+  color: #FFF;
+}
+.langs a:hover {
+  color: darkkhaki;
+  transition: 0.3s;
+}
+.langs .active-lang {
+  color: darkkhaki;
+}
+.langs span {
+  color: #FFF;
+}
+
 .navbar-burger {
   width: 80px;
   height: 80px;
@@ -167,6 +186,11 @@ html {
   width: 870px;
   padding: 1rem 0 3rem;
 }
+@media (min-width: 641px) {
+  .main {
+    padding-right: 1rem;
+  }
+}
 @media (max-width: 640px) {
   .main {
     width: 100%;
@@ -184,6 +208,7 @@ html {
 .aside {
   padding-top: 1rem;
   width: 370px;
+  position: -webkit-sticky;
   position: sticky;
   top: 1rem;
   align-self: flex-start;

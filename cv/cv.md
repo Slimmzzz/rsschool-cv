@@ -12,7 +12,7 @@
 
 ## Учёба, курсы
 
-### __2018-2021__ [KickStart English](https://kse.by/)(B2 level)
+### **2018-2021** [KickStart English](https://kse.by/)(B2 level)
 
 * Общение c носителем языка
 * Непринуждённая обстановка
