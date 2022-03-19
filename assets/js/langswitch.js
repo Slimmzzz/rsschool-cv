@@ -71,6 +71,35 @@ class Langswitch {
                 "vfs-text4": "Снабжение всех офисов беларуси всем необходимым",
                 "contacts": "Контакты для связи:",
             },
-        }
+        };
+        this.textElems = [...document.querySelectorAll('[data-switcher]')];
+        this.langSwitchers = [...document.querySelectorAll('[data-switcher-switch]')];
+        this.switchLang = this._switchLang.bind(this);
+        this.init();
     }
+
+    init() {
+        this.langSwitchers.forEach((el) => {
+            el.addEventListener('click', this.switchLang);
+        });
+    };
+
+    _switchLang(event) {
+        this.langSwitchers.forEach((el) => {
+            el.classList.remove('active-lang');
+        });
+
+        let target = event.target;
+        target.classList.add('active-lang');
+
+        let lang = target.getAttribute('data-switcher-switch');
+        for(let textElem of this.textElems) {
+            let key = textElem.getAttribute('data-switcher');
+            let value = this.switcher[lang][key];
+            textElem.innerHTML = value;
+        };
+    };
+
 }
+
+new Langswitch();
