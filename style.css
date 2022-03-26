@@ -1,0 +1,269 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #303030;
+  background-color: #fcfcfc;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+@media (max-width: 1210px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 640px) {
+  .wrapper {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 640px) {
+  .desktop {
+    display: none !important;
+  }
+}
+
+@media (min-width: 641px) {
+  .mobile {
+    display: none !important;
+  }
+}
+
+.header {
+  width: 100%;
+  padding: 15px 0px;
+  background-color: #303034;
+}
+@media (max-width: 640px) {
+  .header {
+    padding: 10px 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.header .logo a {
+  display: flex;
+}
+.header .nav a {
+  text-decoration: none;
+  color: #FEFCE6;
+  font-size: 1rem;
+  text-transform: uppercase;
+  position: relative;
+}
+.header .nav a::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border: 1px solid #FEFCE6;
+  opacity: 0;
+  transition: 0.3s;
+}
+.header .nav a:hover::before {
+  opacity: 1;
+}
+.header .nav.desktop ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.header .nav.desktop ul li:not(:last-child) {
+  margin-right: 30px;
+}
+.header .mobile-navigation {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  background-color: #303034;
+  transition: 0.5s ease-in-out;
+  transform: translateX(-100%);
+}
+.header .mobile-navigation.is-active {
+  transform: translateX(0);
+}
+.header .mobile-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header .mobile-navigation ul li {
+  width: 100%;
+  margin: 7px 0;
+  text-align: right;
+}
+
+.langs {
+  font-size: 20px;
+}
+.langs a {
+  text-decoration: none;
+  color: #FFF;
+}
+.langs a:hover {
+  color: darkkhaki;
+  transition: 0.3s;
+}
+.langs .active-lang {
+  color: darkkhaki;
+}
+.langs span {
+  color: #FFF;
+}
+
+.navbar-burger {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: flex;
+}
+.navbar-burger span {
+  height: 1px;
+  width: 40px;
+  background-color: #FEFCE6;
+  position: absolute;
+  left: 20px;
+  transition: all 0.5s ease-in-out;
+}
+.navbar-burger span:first-child {
+  top: calc(50% - 10px);
+}
+.navbar-burger span:nth-child(2) {
+  top: calc(50% - 1px);
+}
+.navbar-burger span:last-child {
+  top: calc(50% + 8px);
+}
+.navbar-burger.is-active span:first-child {
+  transform: translateY(10px) rotate(45deg);
+}
+.navbar-burger.is-active span:nth-child(2) {
+  opacity: 0;
+}
+.navbar-burger.is-active span:last-child {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.main {
+  width: 870px;
+  padding: 1rem 0 3rem;
+}
+@media (min-width: 641px) {
+  .main {
+    padding-right: 1rem;
+  }
+}
+@media (max-width: 640px) {
+  .main {
+    width: 100%;
+  }
+}
+.main .author_photo {
+  float: left;
+  margin: 0px 25px 11px 0px;
+}
+.main p {
+  max-width: 700px;
+  margin-bottom: 10px;
+}
+
+.aside {
+  padding-top: 1rem;
+  width: 370px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 1rem;
+  align-self: flex-start;
+}
+.aside h3 {
+  text-decoration: underline;
+}
+.aside .phone, .aside .e-mail, .aside .telegram {
+  display: flex;
+}
+.aside .phone a, .aside .e-mail a, .aside .telegram a {
+  padding-top: 7px;
+  text-decoration: none;
+  color: #303034;
+}
+.aside .contacts img {
+  width: 40px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+@media (max-width: 640px) {
+  .aside {
+    width: 100%;
+  }
+}
+
+.footer {
+  width: 100%;
+  padding: 30px 0;
+  background-color: #303034;
+}
+.footer .footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 640px) {
+  .footer .footer-inner {
+    flex-direction: column;
+  }
+}
+.footer p {
+  font-size: 20px;
+  color: #fff;
+}
+.footer a.git-link {
+  width: 40px;
+  height: 40px;
+}
+.footer a.git-link img {
+  max-width: 100%;
+}
+.footer .logo-rs {
+  width: 100px;
+}
+.footer .logo-rs img {
+  max-width: 100%;
+}/*# sourceMappingURL=style.css.map */
