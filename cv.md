@@ -56,3 +56,18 @@
 
 ## Пример выполненной работы по массивам с использованием JavaScript
 
+```javascript
+function noSpace(str){
+    let splitted = str.split(""); 
+    let result = [];
+    
+    for (let i = 0, l = splitted.length; i < l; i++) {
+        if (splitted[i] !== " ") {
+        result.push(splitted[i]);
+        }
+    }
+    
+    return result.join("");
+}
+```
+
