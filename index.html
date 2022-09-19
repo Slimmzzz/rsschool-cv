@@ -73,6 +73,7 @@
         </div>
     </header>
 
+            <main class="main">
                 <h1 data-switcher="h1">Максим Хотин: резюме</h1>
                 <!-- First section about author -->
                 <section id="section_1">
@@ -135,6 +136,25 @@
                             <li data-switcher="vfs-text4">Снабжение всех офисов беларуси всем необходимым</li>
                         </ul>
                 </section>
+
+                <!-- Example of code, sourse: codewars.com -->
+                <section id="section_4"><h2 data-switcher="code">Пример выполненной работы</h2>
+                    <pre id="hljs" class="js">
+                        <code class="js">function noSpace(str){
+    let splitted = str.split(""); 
+    let result = [];
+    
+    for (let i = 0, l = splitted.length; i &lt; l; i++) {
+        if (splitted[i] !== " ") {
+        result.push(splitted[i]);
+        }
+    }
+    
+    return result.join("");
+}</code>
+                    </pre>
+                </section>
+            </main>
 
 </body>
 </html>
