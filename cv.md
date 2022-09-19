@@ -71,3 +71,14 @@ function noSpace(str){
 }
 ```
 
+## Контакты для связи
+
+Телефон: [+375293904874](+375293904874)
+
+e-mail: [maxim.khotsin@gmail.com](maxim.khotsin@gmail.com)
+
+Telegram: [@Slimmzzz](https://t.me/slimmzzz)
+
+GitHub: [Slimmzzz](https://github.com/Slimmzzz)
+
+## &copy;2021
