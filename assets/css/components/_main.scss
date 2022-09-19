@@ -1,0 +1,24 @@
+.main {
+    width: 870px;
+    padding: 1rem 0 3rem;
+
+    @media (min-width: 641px) {
+        padding-right: 1rem;
+    }
+    
+    @media (max-width: $breakpoint_mobile) {
+        width: 100%;
+    }
+
+    .author_photo {
+        float: left;
+        margin: 0px 25px 11px 0px;
+    }
+    
+    p {
+        // font-size: 1.5rem;
+        max-width: 700px;
+        // text-indent: 50px;
+        margin-bottom: 10px;
+    }
+}
