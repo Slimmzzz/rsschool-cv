@@ -23,3 +23,55 @@
     <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                
+                <!-- LOGO with link to the main page -->
+                <div class="logo">
+                    <a href="/">
+                        <img 
+                            srcset="/assets/img/slimgos_60x60.jpg 60w, /assets/img/slimgos_80x80.jpg 80w" 
+                            sizes="(max-width: 640px) 60px, (min-width: 641px) 80px" 
+                            src="/assets/img/slimgos_80x80.jpg" 
+                            alt="Главная страница"
+                        >
+                    </a>
+                </div>
+                
+                <!-- Navigation to main sections -->
+                <nav class="nav desktop">
+                    <ul>
+                        <li><a data-switcher="about" href="#section_1">О себе</a></li>
+                        <li><a data-switcher="study" href="#section_2">Учёба, курсы</a></li>
+                        <li><a data-switcher="experience" href="#section_3">Опыт работы</a></li>
+                        <li><a data-switcher="code" href="#section_4">Пример выполненной работы</a></li>
+                    </ul>
+                </nav>
+                <div class="langs">
+                    <a data-switcher-switch="ru" href="javascript:void(0)" class="active-lang">ru</a>
+                    <span>/</span>
+                    <a data-switcher-switch="en" href="javascript:void(0)">en</a>
+                </div>
+            </div>
+            <a role="button" class="navbar-burger mobile" aria-label="menu" aria-expanded="false" id="burger">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="mobile-navigation mobile" id="mobile-navigation">
+            <nav class="nav nav-mobile">
+                <ul>
+                    <li><a data-switcher="about" href="#section_1">О себе</a></li>
+                    <li><a data-switcher="study" href="#section_2">Учёба, курсы</a></li>
+                    <li><a data-switcher="experience" href="#section_3">Опыт работы</a></li>
+                    <li><a data-switcher="code" href="#section_4">Пример выполненной работы</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+</body>
+</html>
