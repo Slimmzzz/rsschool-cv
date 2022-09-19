@@ -81,4 +81,4 @@ Telegram: [@Slimmzzz](https://t.me/slimmzzz)
 
 GitHub: [Slimmzzz](https://github.com/Slimmzzz)
 
-## &copy;2021
+## &copy;2022
