@@ -1,0 +1,9 @@
+$color_dark: #303034;
+$breakpoint_mobile: 640px;
+$color_begie: #FEFCE6;
+
+@import 'assets/css/common';
+@import 'assets/css/components/header';
+@import 'assets/css/components/main';
+@import 'assets/css/components/aside';
+@import 'assets/css/components/footer';

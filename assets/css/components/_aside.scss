@@ -1,0 +1,32 @@
+.aside {
+    padding-top: 1rem;
+    width: 370px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1rem;
+    align-self: flex-start;
+
+    h3 {
+        text-decoration: underline;
+    }
+
+    .phone, .e-mail, .telegram {
+        display: flex;
+        a {
+            padding-top: 7px;
+            text-decoration: none;
+            color: $color_dark;
+        }
+    }
+
+    .contacts img {
+        width: 40px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+
+    @media (max-width: $breakpoint_mobile) {
+        width: 100%;
+    }
+
+}
