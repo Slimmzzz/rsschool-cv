@@ -143,18 +143,35 @@
                 <!-- Example of code, sourse: codewars.com -->
                 <section id="section_4"><h2 data-switcher="code">Пример выполненной работы</h2>
                     <pre id="hljs" class="js">
-                        <code class="js">function noSpace(str){
-    let splitted = str.split("");
-    let result = [];
+                        <code class="js"><b>Element popup logic</b>
+                            
+let popup = document.querySelector('#popup_wrapper');
+let slidesList = document.querySelectorAll('[data-slide]');
+let popupClosebtn = document.querySelector('#popup_close');
+let testimonialsWrapper = document.querySelector('#slider_testimonials');
 
-    for (let i = 0, l = splitted.length; i &lt; l; i++) {
-        if (splitted[i] !== " ") {
-        result.push(splitted[i]);
-        }
+testimonialsWrapper.addEventListener('click', (e) => {
+    let target = e.target.classList.contains('feedback_card') ? 
+    e.target : e.target.closest('.feedback_card');
+    if (target) {
+        overlay.classList.add('is_active');
+        popup.style.display = 'block';
+        let cardClone = target.cloneNode(true);
+        popup.prepend(cardClone);
     }
+})
 
-    return result.join("");
-}</code>
+popupClosebtn.addEventListener('click', () => {
+    overlay.classList.remove('is_active');
+    popup.style.display = 'none';
+    popup.removeChild(popup.children[0]);
+});
+overlay.addEventListener('click', () => {
+    popup.style.display = 'none';
+    popup.removeChild(popup.children[0]);
+    overlay.classList.remove('is_active');
+});
+                        </code>
                     </pre>
                 </section>
             </main>
