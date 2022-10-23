@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
 
 <!-- CSS styles -->
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./style.css">
 
 <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/img/slimgos_favicon.ico" type="image/x-icon">
@@ -30,11 +30,11 @@
 
                 <!-- LOGO with link to the main page -->
                 <div class="logo">
-                    <a href="/">
+                    <a href="./index.html">
                         <img
-                            srcset="/assets/img/slimgos_60x60.jpg 60w, /assets/img/slimgos_80x80.jpg 80w"
+                            srcset="./assets/img/slimgos_60x60.jpg 60w, ./assets/img/slimgos_80x80.jpg 80w"
                             sizes="(max-width: 640px) 60px, (min-width: 641px) 80px"
-                            src="/assets/img/slimgos_80x80.jpg"
+                            src="./assets/img/slimgos_80x80.jpg"
                             alt="Главная страница"
                         >
                     </a>
@@ -82,7 +82,7 @@
                 <section id="section_1">
                     <h2 data-switcher="about">О себе</h2>
                     <p data-switcher="about-main">Для начала, хотелось бы немного рассказать о себе и поделиться некоторыми мыслями:</p>
-                    <p data-switcher="about-text1"><img src="/assets/img/About_photo.jpg" alt="Фото автора" class="author_photo">Мне 29 лет, работаю в Посольстве Венгрии, в консульском отделе. Долгое время работал в сферах, которые пересекаются с визовой и информационной поддержкой, пробовал себя в разных направлениях, искал и изучал много различной информации.</p>
+                    <p data-switcher="about-text1"><img src="./assets/img/About_photo.jpg" alt="Фото автора" class="author_photo">Мне 29 лет, работаю в Посольстве Венгрии, в консульском отделе. Долгое время работал в сферах, которые пересекаются с визовой и информационной поддержкой, пробовал себя в разных направлениях, искал и изучал много различной информации.</p>
                     <p data-switcher="about-text2">На каждой работе сталкиваешься с потолком, в котором уже не требуется изучение нового, а работа становится лишь механической и безинициативной, в результате чего было принято решение учиться в IT, с перспективой смены места работы. </p>
                     <p data-switcher="about-text3">Мною было проанализировано большое количество информации о направлениях развития и принято решение учиться в направлении <strong>Front-End</strong> разработки. Пройти обучение в <em>Rolling Scopes School</em> мне предложил друг, который успешно завершил данную школу несколько лет назад и работающий по направлению <strong>Front-end/Back-end разработка</strong>.</p>
                 </section>
@@ -144,7 +144,7 @@
                 <section id="section_4"><h2 data-switcher="code">Пример выполненной работы</h2>
                     <pre id="hljs" class="js">
                         <code class="js"><b>Element popup logic</b>
-                            
+
 let popup = document.querySelector('#popup_wrapper');
 let slidesList = document.querySelectorAll('[data-slide]');
 let popupClosebtn = document.querySelector('#popup_close');
@@ -180,15 +180,15 @@ overlay.addEventListener('click', () => {
                 <h3 data-switcher="contacts">Контакты для связи:</h3>
                 <div class="contacts">
                     <div class="phone">
-                        <img src="/assets/img/call.png" alt="phone icon">
+                        <img src="./assets/img/call.png" alt="phone icon">
                         <a href="tel:+375293904874">+375293904874</a>
                     </div>
                     <div class="e-mail">
-                        <img src="/assets/img/gmail.png" alt="phone icon">
+                        <img src="./assets/img/gmail.png" alt="phone icon">
                         <a href="mailto:slimgos22@gmail.com">slimgos22@gmail.com</a>
                     </div>
                     <div class="telegram">
-                        <img src="/assets/img/telegram.png" alt="phone icon">
+                        <img src="./assets/img/telegram.png" alt="phone icon">
                         <a href="https://t.me/slimmzzz">@slimmzzz</a>
                     </div>
                 </div>
@@ -202,18 +202,18 @@ overlay.addEventListener('click', () => {
         <div class="container">
             <div class="footer-inner">
                 <a class="logo-rs" target="_blank" href="https://rs.school/">
-                    <img src="/assets/img/rs_logo_white.svg" alt="RSSchool link">
+                    <img src="./assets/img/rs_logo_white.svg" alt="RSSchool link">
                 </a>
 
                 <p>&copy; 2022</p>
 
                 <a class="git-link" href="https://github.com/Slimmzzz">
-                <img src="/assets/img/-github.svg" alt="GitHub link"></a>
+                <img src="./assets/img/-github.svg" alt="GitHub link"></a>
             </div>
         </div>
     </footer>
 
-    <script src="/assets/js/langswitch.js"></script>
-    <script src="/assets/js/burger.js"></script>
+    <script src="./assets/js/langswitch.js"></script>
+    <script src="./assets/js/burger.js"></script>
 </body>
 </html>
